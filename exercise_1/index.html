@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="filter__wrapper">
+                <form action="#" class="filter">
+                    <div class="filter__top">
+                        <input type="text" class="search-field__input input special" placeholder="...">
+                        <button class="filter__btn btn special">Find</button>
+                    </div>
+
+                    <div class="filter__bottom">
+                        <fieldset class="gender filter__fieldset fieldset">
+                            <legend class="legend special">Gender</legend>
+                            <label><input type="radio" name="gender" value="female" onclick="setGender(value)">
+                                Female</label></br>
+                            <label><input type="radio" name="gender" value="male" onclick="setGender(value)">
+                                Male</label>
+                        </fieldset>
+                        <fieldset class="status filter__fieldset fieldset">
+                            <legend class="legend special">Status</legend>
+                            <label><input type="radio" name="status" value="true" onclick="setStatus(value)">
+                                Survived</label></br>
+                            <label><input type="radio" name="status" value="false" onclick="setStatus(value)">
+                                Not survived</label>
+                        </fieldset>
+                        <fieldset class="age filter__fieldset fieldset">
+                            <legend class="legend special">Age</legend>
+                            <label>from <input type="number" class="fieldset__input input" name="age"></label> -
+                            <label>to <input type="number" class="fieldset__input input" name="age"></label>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main container">
+        <h3 class="main__header">Passengers</h3>
+        <div class="passengers"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; All Rights Reserved, 2021</p>
+    </footer>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
